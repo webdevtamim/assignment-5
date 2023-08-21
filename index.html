@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="style/style.css">
     <title>SUMMER SALE</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
           theme: {
@@ -17,20 +19,30 @@
               colors: {
                 'primary-color': '#E527B2',
                 'primary-bg': '#F9F6E2',
-                'body-bg': '#F8F8F8',
+                'secondery-color': 'rgba(17, 17, 17, 0.50)',
+                'secondery-bg': '#F8F8F8',
+                'rating-color': '#FFC107',
               }
             }
           }
         }
       </script>
+      <style>
+        body {
+          font-family: 'Work Sans', sans-serif;
+        }
+        #remove-outline:focus{
+          outline: none;
+        }
+      </style>
 </head>
-<body class="bg-body-bg pb-10">
-    <header class="bg-primary-bg">
+<body class="bg-secondery-bg pb-10">
+    <header class="bg-primary-bg py-20">
         <section class="max-w-[1440px] grid grid-cols-2 mx-auto">
             <div class="grid content-center">
                 <h5 class="text-3xl font-medium text-center text-gray-900">---SALE FEVER---</h5>
                 <h2 class="text-6xl font-bold text-center text-gray-900 pt-11 pb-16">Purchase TK 200 or <br> above & get <span  class="text-primary-color">20% off</span></h2>
-                <p class="text-2xl font-medium text-center text-gray-900">Use Promo Code <span  class="text-white bg-primary-color rounded-lg py-3.5 px-6">SELL200</span></p>
+                <p class="text-2xl font-medium text-center text-gray-900">Use Promo Code <span  class="text-white bg-primary-color rounded-lg py-3.5 px-6 ml-2.5">SELL200</span></p>
             </div>
             <div class="grid content-center">
                 <img class="w-11/12" src="images/Summer 1.png" alt="banner">
@@ -39,11 +51,162 @@
     </header>
 
     <!-- main section -->
-    <main>
-        <section>
-            <div></div>
-            <div></div>
-        </section>
+    <main class="pt-28 pb-52 max-w-[1440px] mx-auto">
+      <h3 class="text-4xl font-semibold text-gray-900 pb-8">Kitchenware</h3>
+      <div class="gap-6" style="display: grid; grid-template-columns: 3fr 1fr;">
+        <div>
+          <div>
+            <div class="grid grid-cols-3 gap-6">
+              <div class="bg-white p-5 rounded-lg">
+                <img class="bg-secondery-bg mx-auto py-8 px-24 mb-5 rounded-lg" src="images/prod1.png" alt="">
+                <div class="rating flex justify-center gap-1">
+                  <input type="radio" name="rating-1" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-1" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-1" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" checked />
+                  <input type="radio" name="rating-1" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-1" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                </div>
+                <h6 class="text-xl font-semibold text-center text-gray-900 py-2">K. Accessories</h6>
+                <p class="text-xl font-normal text-center text-secondery-color">39.00 TK</p>
+              </div>
+              <div class="bg-white p-5 rounded-lg">
+                <img class="bg-secondery-bg mx-auto py-8 px-24 mb-5 rounded-lg" src="images/prod2.png" alt="">
+                <div class="rating flex justify-center gap-1">
+                  <input type="radio" name="rating-2" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-2" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-2" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-2" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-2" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                </div>
+                <h6 class="text-xl font-semibold text-center text-gray-900 py-2">K. Accessories</h6>
+                <p class="text-xl font-normal text-center text-secondery-color">25.00 TK</p>
+              </div>
+              <div class="bg-white p-5 rounded-lg">
+                <img class="bg-secondery-bg mx-auto py-8 px-24 mb-5 rounded-lg" src="images/prod3.png" alt="">
+                <div class="rating flex justify-center gap-1">
+                  <input type="radio" name="rating-3" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-3" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-3" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-3" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" checked />
+                  <input type="radio" name="rating-3" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                </div>
+                <h6 class="text-xl font-semibold text-center text-gray-900 py-2">Furniture</h6>
+                <p class="text-xl font-normal text-center text-secondery-color">49.00 TK</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-4xl font-semibold text-gray-900 pt-14 pb-8">Sportswear</h3>
+            <div class="grid grid-cols-3 gap-6">
+              <div class="bg-white p-5 rounded-lg">
+                <img class="bg-secondery-bg mx-auto py-8 px-24 mb-5 rounded-lg" src="images/prod4.png" alt="">
+                <div class="rating flex justify-center gap-1">
+                  <input type="radio" name="rating-4" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-4" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" checked />
+                  <input type="radio" name="rating-4" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-4" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-4" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                </div>
+                <h6 class="text-xl font-semibold text-center text-gray-900 py-2">Sports Back Cap</h6>
+                <p class="text-xl font-normal text-center text-secondery-color">49.00 TK</p>
+              </div>
+              <div class="bg-white p-5 rounded-lg">
+                <img class="bg-secondery-bg mx-auto py-8 px-24 mb-5 rounded-lg" src="images/prod5.png" alt="">
+                <div class="rating flex justify-center gap-1">
+                  <input type="radio" name="rating-5" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-5" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-5" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-5" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" checked />
+                  <input type="radio" name="rating-5" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                </div>
+                <h6 class="text-xl font-semibold text-center text-gray-900 py-2">Full Jersey Set</h6>
+                <p class="text-xl font-normal text-center text-secondery-color">69.00 TK</p>
+              </div>
+              <div class="bg-white p-5 rounded-lg">
+                <img class="bg-secondery-bg mx-auto py-8 px-24 mb-5 rounded-lg" src="images/prod6.png" alt="">
+                <div class="rating flex justify-center gap-1">
+                  <input type="radio" name="rating-6" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-6" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-6" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" checked />
+                  <input type="radio" name="rating-6" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-6" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                </div>
+                <h6 class="text-xl font-semibold text-center text-gray-900 py-2">Sports cates</h6>
+                <p class="text-xl font-normal text-center text-secondery-color">159.00 TK</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-4xl font-semibold text-gray-900 pt-14 pb-8">Furniture</h3>
+            <div class="grid grid-cols-3 gap-6">
+              <div class="bg-white p-5 rounded-lg">
+                <img class="bg-secondery-bg mx-auto py-8 px-24 mb-5 rounded-lg" src="images/prod7.png" alt="">
+                <div class="rating flex justify-center gap-1">
+                  <input type="radio" name="rating-7" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-7" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-7" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-7" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" checked />
+                  <input type="radio" name="rating-7" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                </div>
+                <h6 class="text-xl font-semibold text-center text-gray-900 py-2">Sports Back Cap</h6>
+                <p class="text-xl font-normal text-center text-secondery-color">185.00 TK</p>
+              </div>
+              <div class="bg-white p-5 rounded-lg">
+                <img class="bg-secondery-bg mx-auto py-8 px-24 mb-5 rounded-lg" src="images/prod8.png" alt="">
+                <div class="rating flex justify-center gap-1">
+                  <input type="radio" name="rating-8" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-8" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-8" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-8" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-8" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" checked />
+                </div>
+                <h6 class="text-xl font-semibold text-center text-gray-900 py-2">Children play</h6>
+                <p class="text-xl font-normal text-center text-secondery-color">299.00 TK</p>
+              </div>
+              <div class="bg-white p-5 rounded-lg">
+                <img class="bg-secondery-bg mx-auto py-8 px-24 mb-5 rounded-lg" src="images/prod9.png" alt="">
+                <div class="rating flex justify-center gap-1">
+                  <input type="radio" name="rating-9" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-9" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-9" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-9" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
+                  <input type="radio" name="rating-9" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" checked />
+                </div>
+                <h6 class="text-xl font-semibold text-center text-gray-900 py-2">Flexible Sofa</h6>
+                <p class="text-xl font-normal text-center text-secondery-color">339.00 TK</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside>
+          <div class="p-6 mb-6 bg-white rounded-lg">
+            <h4 class="text-2xl font-medium text-gray-900 mb-4">Have coupon?</h4>
+            <div class="form-control w-full">
+              <label class="input-group h-16 w-full">
+                <input id="remove-outline" type="text" placeholder="Coupon code" class="input input-bordered min-h-full px-4 bg-transparent text-2xl font-normal text-secondery-color w-full" />
+                <button class="px-6 min-h-full bg-primary-color text-2xl font-medium text-white">Apply</button>
+              </label>
+            </div>
+          </div>
+          <div class="p-6 bg-white rounded-lg">
+            <ul class="text-2xl font-medium text-gray-900 leading-10">
+              <li>Home Cooker</li>
+              <li>Sports cates</li>
+              <li>Home Cooker</li>
+            </ul>
+
+            <hr class="my-3">
+
+            <p class="text-2xl font-medium text-gray-900 leading-10">Total price: <span class="text-secondary-color">257.00TK</span></p>
+            <p class="text-2xl font-medium text-gray-900 leading-10">Discount :<span class="text-secondary-color">51.40TK</span></p>
+            <p class="text-2xl font-medium text-gray-900 leading-10">Total: <span class="text-secondary-color">205.60 T</span>K</p>
+
+            <hr class="my-6">
+
+            <button class="px-16 py-4 bg-primary-color text-2xl font-medium text-white rounded-lg">Make Purchase</button>
+          </div>
+        </aside>
+      </div>
     </main>
 
     <script src="script/script.js"></script>
