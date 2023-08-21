@@ -1,0 +1,16 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+  }
+  #second-part {
+    grid-template-columns: 3fr 1fr;
+  }
+  #remove-outline:focus {
+    outline: none;
+  }
+
+  /* responsive */
+  @media screen and (max-width: 570px) {
+    #second-part {
+        grid-template-columns: 1fr;
+      }
+  }

@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/Summer 1.png" type="image/x-icon">
+    <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+
     <link rel="stylesheet" href="style/style.css">
     <title>SUMMER SALE</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -26,39 +29,33 @@
             }
           }
         }
-      </script>
-      <style>
-        body {
-          font-family: 'Work Sans', sans-serif;
-        }
-        #remove-outline:focus{
-          outline: none;
-        }
-      </style>
+    </script>
 </head>
 <body class="bg-secondery-bg pb-10">
     <header class="bg-primary-bg py-20">
-        <section class="max-w-[1440px] grid grid-cols-2 mx-auto">
+        <section class="max-w-[1440px] grid grid-cols-1 md:grid-cols-2 mx-auto">
             <div class="grid content-center">
                 <h5 class="text-3xl font-medium text-center text-gray-900">---SALE FEVER---</h5>
-                <h2 class="text-6xl font-bold text-center text-gray-900 pt-11 pb-16">Purchase TK 200 or <br> above & get <span  class="text-primary-color">20% off</span></h2>
-                <p class="text-2xl font-medium text-center text-gray-900">Use Promo Code <span  class="text-white bg-primary-color rounded-lg py-3.5 px-6 ml-2.5">SELL200</span></p>
+                <h2 class="text-4xl xl:text-6xl font-bold text-center text-gray-900 xl:pt-11 xl:pb-16 pt-9 pb-14">Purchase TK 200 or <br> above & get <span  class="text-primary-color">20% off</span></h2>
+                <p class="text-xl lg:text-2xl font-medium text-center text-gray-900">Use Promo Code <span  class="text-white bg-primary-color rounded-lg py-3.5 px-6 ml-2.5">SELL200</span></p>
             </div>
-            <div class="grid content-center">
-                <img class="w-11/12" src="images/Summer 1.png" alt="banner">
+            <div class="grid content-center pt-10 md:pt-0">
+                <img class="md:w-11/12 w-9/12 mx-auto" src="images/Summer 1.png" alt="banner">
             </div>
         </section>
     </header>
 
     <!-- main section -->
-    <main class="pt-28 pb-52 max-w-[1440px] mx-auto">
-      <h3 class="text-4xl font-semibold text-gray-900 pb-8">Kitchenware</h3>
-      <div class="gap-6" style="display: grid; grid-template-columns: 3fr 1fr;">
+    <main class="pt-28 lg:pb-52 pb-20 max-w-[1440px] mx-auto px-5">
+      <h3 class="text-2xl lg:text-4xl font-semibold text-gray-900 pb-8">Kitchenware</h3>
+      <div id="second-part" class="gap-6 grid">
         <div>
           <div>
-            <div class="grid grid-cols-3 gap-6">
-              <div class="bg-white p-5 rounded-lg">
-                <img class="bg-secondery-bg mx-auto py-8 px-24 mb-5 rounded-lg" src="images/prod1.png" alt="">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div class="bg-white p-5 pb-10 rounded-lg h-full">
+                <div class="bg-secondery-bg mb-5 rounded-lg h-3/5 grid content-center justify-center">
+                  <img class="w-9/12 mx-auto" src="images/prod1.png" alt="">
+                </div>
                 <div class="rating flex justify-center gap-1">
                   <input type="radio" name="rating-1" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
                   <input type="radio" name="rating-1" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
@@ -69,8 +66,10 @@
                 <h6 class="text-xl font-semibold text-center text-gray-900 py-2">K. Accessories</h6>
                 <p class="text-xl font-normal text-center text-secondery-color">39.00 TK</p>
               </div>
-              <div class="bg-white p-5 rounded-lg">
-                <img class="bg-secondery-bg mx-auto py-8 px-24 mb-5 rounded-lg" src="images/prod2.png" alt="">
+              <div class="bg-white p-5 pb-10 rounded-lg">
+                <div class="bg-secondery-bg mb-5 rounded-lg h-3/5 grid content-center justify-center">
+                  <img class="w-9/12 mx-auto" src="images/prod2.png" alt="">
+                </div>
                 <div class="rating flex justify-center gap-1">
                   <input type="radio" name="rating-2" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
                   <input type="radio" name="rating-2" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
@@ -81,8 +80,10 @@
                 <h6 class="text-xl font-semibold text-center text-gray-900 py-2">K. Accessories</h6>
                 <p class="text-xl font-normal text-center text-secondery-color">25.00 TK</p>
               </div>
-              <div class="bg-white p-5 rounded-lg">
-                <img class="bg-secondery-bg mx-auto py-8 px-24 mb-5 rounded-lg" src="images/prod3.png" alt="">
+              <div class="bg-white p-5 pb-10 rounded-lg">
+                <div class="bg-secondery-bg mb-5 rounded-lg h-3/5 grid content-center justify-center">
+                  <img class="w-9/12 mx-auto" src="images/prod3.png" alt="">
+                </div>
                 <div class="rating flex justify-center gap-1">
                   <input type="radio" name="rating-3" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
                   <input type="radio" name="rating-3" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
@@ -96,10 +97,12 @@
             </div>
           </div>
           <div>
-            <h3 class="text-4xl font-semibold text-gray-900 pt-14 pb-8">Sportswear</h3>
-            <div class="grid grid-cols-3 gap-6">
-              <div class="bg-white p-5 rounded-lg">
-                <img class="bg-secondery-bg mx-auto py-8 px-24 mb-5 rounded-lg" src="images/prod4.png" alt="">
+            <h3 class="text-2xl lg:text-4xl font-semibold text-gray-900 pt-14 pb-8">Sportswear</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div class="bg-white p-5 pb-10 rounded-lg">
+                <div class="bg-secondery-bg mb-5 rounded-lg h-3/5 grid content-center justify-center">
+                  <img class="w-9/12 mx-auto" src="images/prod4.png" alt="">
+                </div>
                 <div class="rating flex justify-center gap-1">
                   <input type="radio" name="rating-4" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
                   <input type="radio" name="rating-4" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" checked />
@@ -110,8 +113,10 @@
                 <h6 class="text-xl font-semibold text-center text-gray-900 py-2">Sports Back Cap</h6>
                 <p class="text-xl font-normal text-center text-secondery-color">49.00 TK</p>
               </div>
-              <div class="bg-white p-5 rounded-lg">
-                <img class="bg-secondery-bg mx-auto py-8 px-24 mb-5 rounded-lg" src="images/prod5.png" alt="">
+              <div class="bg-white p-5 pb-10 rounded-lg">
+                <div class="bg-secondery-bg mb-5 rounded-lg h-3/5 grid content-center justify-center">
+                  <img class="w-9/12 mx-auto" src="images/prod5.png" alt="">
+                </div>
                 <div class="rating flex justify-center gap-1">
                   <input type="radio" name="rating-5" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
                   <input type="radio" name="rating-5" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
@@ -122,8 +127,10 @@
                 <h6 class="text-xl font-semibold text-center text-gray-900 py-2">Full Jersey Set</h6>
                 <p class="text-xl font-normal text-center text-secondery-color">69.00 TK</p>
               </div>
-              <div class="bg-white p-5 rounded-lg">
-                <img class="bg-secondery-bg mx-auto py-8 px-24 mb-5 rounded-lg" src="images/prod6.png" alt="">
+              <div class="bg-white p-5 pb-10 rounded-lg">
+                <div class="bg-secondery-bg mb-5 rounded-lg h-3/5 grid content-center justify-center">
+                  <img class="w-9/12 mx-auto" src="images/prod6.png" alt="">
+                </div>
                 <div class="rating flex justify-center gap-1">
                   <input type="radio" name="rating-6" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
                   <input type="radio" name="rating-6" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
@@ -137,10 +144,12 @@
             </div>
           </div>
           <div>
-            <h3 class="text-4xl font-semibold text-gray-900 pt-14 pb-8">Furniture</h3>
-            <div class="grid grid-cols-3 gap-6">
-              <div class="bg-white p-5 rounded-lg">
-                <img class="bg-secondery-bg mx-auto py-8 px-24 mb-5 rounded-lg" src="images/prod7.png" alt="">
+            <h3 class="text-2xl lg:text-4xl font-semibold text-gray-900 pt-14 pb-8">Furniture</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div class="bg-white p-5 pb-10 rounded-lg">
+                <div class="bg-secondery-bg mb-5 rounded-lg h-3/5 grid content-center justify-center">
+                  <img class="w-9/12 mx-auto" src="images/prod7.png" alt="">
+                </div>
                 <div class="rating flex justify-center gap-1">
                   <input type="radio" name="rating-7" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
                   <input type="radio" name="rating-7" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
@@ -151,8 +160,10 @@
                 <h6 class="text-xl font-semibold text-center text-gray-900 py-2">Sports Back Cap</h6>
                 <p class="text-xl font-normal text-center text-secondery-color">185.00 TK</p>
               </div>
-              <div class="bg-white p-5 rounded-lg">
-                <img class="bg-secondery-bg mx-auto py-8 px-24 mb-5 rounded-lg" src="images/prod8.png" alt="">
+              <div class="bg-white p-5 pb-10 rounded-lg">
+                <div class="bg-secondery-bg mb-5 rounded-lg h-3/5 grid content-center justify-center">
+                  <img class="w-9/12 mx-auto" src="images/prod8.png" alt="">
+                </div>
                 <div class="rating flex justify-center gap-1">
                   <input type="radio" name="rating-8" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
                   <input type="radio" name="rating-8" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
@@ -163,8 +174,10 @@
                 <h6 class="text-xl font-semibold text-center text-gray-900 py-2">Children play</h6>
                 <p class="text-xl font-normal text-center text-secondery-color">299.00 TK</p>
               </div>
-              <div class="bg-white p-5 rounded-lg">
-                <img class="bg-secondery-bg mx-auto py-8 px-24 mb-5 rounded-lg" src="images/prod9.png" alt="">
+              <div class="bg-white p-5 pb-10 rounded-lg">
+                <div class="bg-secondery-bg mb-5 rounded-lg h-3/5 grid content-center justify-center">
+                  <img class="w-9/12 mx-auto" src="images/prod9.png" alt="">
+                </div>
                 <div class="rating flex justify-center gap-1">
                   <input type="radio" name="rating-9" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
                   <input type="radio" name="rating-9" class="border-4 border-solid border-rating-color mask mask-star-2 bg-rating-color" />
@@ -180,16 +193,16 @@
         </div>
         <aside>
           <div class="p-6 mb-6 bg-white rounded-lg">
-            <h4 class="text-2xl font-medium text-gray-900 mb-4">Have coupon?</h4>
+            <h4 class="text-xl xl:text-2xl font-medium text-gray-900 mb-4">Have coupon?</h4>
             <div class="form-control w-full">
               <label class="input-group h-16 w-full">
-                <input id="remove-outline" type="text" placeholder="Coupon code" class="input input-bordered min-h-full px-4 bg-transparent text-2xl font-normal text-secondery-color w-full" />
-                <button class="px-6 min-h-full bg-primary-color text-2xl font-medium text-white">Apply</button>
+                <input id="remove-outline" type="text" placeholder="Coupon code" class="input input-bordered h-3/4 md:min-h-full px-2 lg:px-4 bg-transparent text-xs lg:text-base xl:text-xl font-normal text-secondery-color w-full" />
+                <button id="apply-btn" class="px-2 lg:px-4 xl:px-6 h-3/4 md:min-h-full bg-primary-color text-xs lg:text-base xl:text-xl font-medium text-white">Apply</button>
               </label>
             </div>
           </div>
           <div class="p-6 bg-white rounded-lg">
-            <ul class="text-2xl font-medium text-gray-900 leading-10">
+            <ul id="prod-list" class="md:text-xl xl:text-2xl font-medium text-gray-900 xl:leading-10 list-decimal pl-6 space-y-1.5">
               <li>Home Cooker</li>
               <li>Sports cates</li>
               <li>Home Cooker</li>
@@ -197,13 +210,15 @@
 
             <hr class="my-3">
 
-            <p class="text-2xl font-medium text-gray-900 leading-10">Total price: <span class="text-secondary-color">257.00TK</span></p>
-            <p class="text-2xl font-medium text-gray-900 leading-10">Discount :<span class="text-secondary-color">51.40TK</span></p>
-            <p class="text-2xl font-medium text-gray-900 leading-10">Total: <span class="text-secondary-color">205.60 T</span>K</p>
+            <div class="space-y-1.5">
+              <p class="md:text-xl xl:text-2xl font-medium text-gray-900 xl:leading-10">Total price : <span class="text-secondery-color"><span>00</span>TK</span></p>
+              <p class="md:text-xl xl:text-2xl font-medium text-gray-900 xl:leading-10">Discount : <span class="text-secondery-color"><span>00</span>TK</span></p>
+              <p class="md:text-xl xl:text-2xl font-medium text-gray-900 xl:leading-10">Total : <span class="text-secondery-color"><span>00</span>TK</span></p>
+            </div>
 
             <hr class="my-6">
 
-            <button class="px-16 py-4 bg-primary-color text-2xl font-medium text-white rounded-lg">Make Purchase</button>
+            <button id="purchase-btn" class="px-4 py-4 bg-primary-color md:text-lg lg:text-xl font-medium text-white rounded-lg w-full">Make Purchase</button>
           </div>
         </aside>
       </div>
