@@ -1,4 +1,13 @@
 // product quantity
+document.getElementById('apply-btn').addEventListener('click', function(){
+    const promoInput = document.getElementById('remove-outline')
+    const promoInputValue = promoInput.value
+    if(promoInputValue !== 'SELL200'){
+        alert("Invalid coupon code! For discount, copy the coupon code from banner.")
+    }
+})
+
+
 document.getElementById('prod1').addEventListener('click', function(){
     const listItem = document.querySelector('#prod-list')
     const liItem = document.createElement('li')
@@ -32,9 +41,6 @@ document.getElementById('prod1').addEventListener('click', function(){
                 const total = totalValue.toFixed(2)
                 document.getElementById('discount').innerText = discount
                 document.getElementById('total').innerText = total
-            }
-            else {
-                alert("Invalid coupon code. Please enter a valid coupon code.")
             }
         })
         document.getElementById('apply-btn').disabled = false
@@ -86,9 +92,6 @@ document.getElementById('prod2').addEventListener('click', function(){
                 document.getElementById('discount').innerText = discount
                 document.getElementById('total').innerText = total
             }
-            else {
-                alert("Invalid coupon code. Please enter a valid coupon code.")
-            }
         })
         document.getElementById('apply-btn').disabled = false
         document.getElementById('apply-btn').style.backgroundColor = '#E527B2'
@@ -138,9 +141,6 @@ document.getElementById('prod3').addEventListener('click', function(){
                 const total = totalValue.toFixed(2)
                 document.getElementById('discount').innerText = discount
                 document.getElementById('total').innerText = total
-            }
-            else {
-                alert("Invalid coupon code. Please enter a valid coupon code.")
             }
         })
         document.getElementById('apply-btn').disabled = false
@@ -192,9 +192,6 @@ document.getElementById('prod4').addEventListener('click', function(){
                 document.getElementById('discount').innerText = discount
                 document.getElementById('total').innerText = total
             }
-            else {
-                alert("Invalid coupon code. Please enter a valid coupon code.")
-            }
         })
         document.getElementById('apply-btn').disabled = false
         document.getElementById('apply-btn').style.backgroundColor = '#E527B2'
@@ -244,9 +241,6 @@ document.getElementById('prod5').addEventListener('click', function(){
                 const total = totalValue.toFixed(2)
                 document.getElementById('discount').innerText = discount
                 document.getElementById('total').innerText = total
-            }
-            else {
-                alert("Invalid coupon code. Please enter a valid coupon code.")
             }
         })
         document.getElementById('apply-btn').disabled = false
@@ -298,9 +292,6 @@ document.getElementById('prod6').addEventListener('click', function(){
                 document.getElementById('discount').innerText = discount
                 document.getElementById('total').innerText = total
             }
-            else {
-                alert("Invalid coupon code. Please enter a valid coupon code.")
-            }
         })
         document.getElementById('apply-btn').disabled = false
         document.getElementById('apply-btn').style.backgroundColor = '#E527B2'
@@ -350,9 +341,6 @@ document.getElementById('prod7').addEventListener('click', function(){
                 const total = totalValue.toFixed(2)
                 document.getElementById('discount').innerText = discount
                 document.getElementById('total').innerText = total
-            }
-            else {
-                alert("Invalid coupon code. Please enter a valid coupon code.")
             }
         })
         document.getElementById('apply-btn').disabled = false
@@ -404,9 +392,6 @@ document.getElementById('prod8').addEventListener('click', function(){
                 document.getElementById('discount').innerText = discount
                 document.getElementById('total').innerText = total
             }
-            else {
-                alert("Invalid coupon code. Please enter a valid coupon code.")
-            }
         })
         document.getElementById('apply-btn').disabled = false
         document.getElementById('apply-btn').style.backgroundColor = '#E527B2'
@@ -457,9 +442,6 @@ document.getElementById('prod9').addEventListener('click', function(){
                 document.getElementById('discount').innerText = discount
                 document.getElementById('total').innerText = total
             }
-            else {
-                alert("Invalid coupon code. Please enter a valid coupon code.")
-            }
         })
         document.getElementById('apply-btn').disabled = false
         document.getElementById('apply-btn').style.backgroundColor = '#E527B2'
@@ -477,5 +459,11 @@ document.getElementById('prod9').addEventListener('click', function(){
     }
 })
 
+// popup 
+document.getElementById('purchase-btn').addEventListener('click', function(){
+    togglePopup1()
+})
 
-document.getElementById('purchase-btn')
+function togglePopup1(){
+    document.getElementById("popup-1").classList.toggle("active");
+}
